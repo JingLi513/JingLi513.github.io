@@ -62,13 +62,20 @@
             Results
         </h1>
         <div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                <div class="col">
-                    <video src="./videos/demo_application.mp4" preload="metadata" controls></video>
+            <div class="row row-cols-1 g-3">
+                <div class="col card shadow-sm">
+                    <video src="./videos/demo_multimodality.mp4" width=100% preload="metadata" controls></video>
+                    <div class="card-body">
+                        <p class="card-text">The leftmost column is the results of three runs
+                            of the baseline algorithm. The results of our method are listed in the middle. The rightmost column is the ground truth.</p>
+                    </div>
                 </div>
-                <!-- <div class="col">
-                    placeholder
-                </div> -->
+                <div class="col card shadow-sm">
+                    <video src="./videos/demo_application.mp4" width=100% preload="metadata" controls></video>
+                    <div class="card-body">
+                        <p class="card-text">A demo of providing a predefined motion as reference in the timeline as constraint. The avatar on the left performs the reference motion, and the right one performs the generated motion. When the black bar moves to the red area, the motion-specific feature of the target motion is used, otherwise the sampled feature is used.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
